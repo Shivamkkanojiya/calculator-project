@@ -1,0 +1,21 @@
+#display {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 200px;
+}
+#input-box {
+  margin: 10px;
+  width: 85%;
+  font-size: 25px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.btn-2 {
+  width: 45px;
+  height: 45px;
+  margin: 3px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="display">
+      <h1>Bat Ball Stump Game</h1>
+      <button
+        onclick=" 
+        // console.log('User choice is Bat');
+        let randomNumber = Math.random() * 3; 
+      let computerChoice;
+      if(randomNumber > 0 && randomNumber <= 1){
+        computerChoice = 'Bat';
+      }else if(randomNumber > 1 && randomNumber <= 2){
+        computerChoice = 'Ball';
+      }else{
+        computerChoice = 'Stump';
+      }
+
+      // console.log(`Computer Choice is ${computerChoice}`);
+
+      let resultMsg;
+      if(computerChoice === 'Ball'){
+        resultMsg = 'User Wins!';
+      }else if(computerChoice === 'Bat'){
+        resultMsg = 'It,s a tie!';
+      }else if(computerChoice === 'Stump'){
+        resultMsg = 'Computer Wins!';
+      }
+
+      // console.log(`ResultMsg ${resultMsg}`)
+      alert(`User Choice is Bat. Computer Choice is ${computerChoice}. ResultMsg is ${resultMsg}`);
+      "
+      >
+        Bat
+      </button>
+      <button
+        onclick="
+       
+      randomNumber = Math.random() * 3;
+      if(randomNumber > 0 && randomNumber <= 1){
+        computerChoice = 'Bat';
+      }else if( randomNumber > 1 && randomNumber <= 2){
+        computerChoice = 'Ball';
+      }else{
+        computerChoice = 'Stump';
+      }
+
+      
+      if(computerChoice === 'Ball'){
+        resultMsg = 'It,s a tie!';
+      }else if(computerChoice === 'Bat'){
+        resultMsg = 'Computer Wins!'; 
+      }else if(computerChoice === 'Stump'){
+        resultMsg = 'User Wins!';
+      }
+      alert(`User Choice is Ball. Computer Choice is ${computerChoice}. ResultMsg is ${resultMsg}`);
+      "
+      >
+        Ball
+      </button>
+      <button
+        onclick="
+       
+      randomNumber = Math.random() * 3;
+      if(randomNumber > 0 && randomNumber <= 1){
+        computerChoice = 'Bat';
+      }else if( randomNumber > 1 && randomNumber <= 2){
+        computerChoice = 'Ball';
+      }else{
+        computerChoice = 'Stump';
+      }
+
+      
+      if(computerChoice === 'Ball'){
+         resultMsg = 'Computer Wins!'; 
+      }else if(computerChoice === 'Bat'){
+        resultMsg = 'User Wins!';
+      }else if(computerChoice === 'Stump'){
+         resultMsg = 'It,s a tie!';
+      }
+      alert(`User Choice is Ball. Computer Choice is ${computerChoice}. ResultMsg is ${resultMsg}`);
+      "
+      >
+        Stump
+      </button>
+    </div>
+  </body>
+</html>
